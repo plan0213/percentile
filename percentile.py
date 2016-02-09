@@ -18,7 +18,7 @@ def calc_percentile(list, p):
     rank = ((length - 1) * p)
     d = rank - int(rank)
 
-    result = list[int(rank)] + (list[int(rank + 1)] - list[int(rank)]) * d
+    result = float(list[int(rank)]) + (float(list[int(rank + 1)]) - float(list[int(rank)])) * d
 
     return result
 
